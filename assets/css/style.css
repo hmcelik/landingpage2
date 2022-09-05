@@ -1603,6 +1603,16 @@ ol {
   font-size: 0.875rem;
   color: #FB6468;
 }
+#tokenomicsDiv ul,#tokensaleDiv ul{
+  transition: all 0.2s;
+}
+.token-graphic-detail ul li:before{background: #f85d77;}
+.token-graphic-detail ul li.color-code-2:before{background: #5ad6f8;}
+.token-graphic-detail ul li.color-code-3:before{background: #f8c04e;}
+.token-graphic-detail ul li.color-code-4:before{background: #ac56f7;}
+.token-graphic-detail ul li.color-code-5:before{background: #61f89f;}
+.token-graphic-detail ul li.color-code-6:before{background: #c32dd3;}
+.donut {color: #3d1f94;}
 
 /*# sourceMappingURL=style.css.map */
 html{scroll-behavior: smooth;}
@@ -1618,4 +1628,195 @@ html{scroll-behavior: smooth;}
 .paragraphdiv{text-align:center ; width: 100%; margin-left: 25px;}
 .videolast{width: 80%; padding-bottom: 2rem; margin-left: 10%; margin-right: 10%;}
 .mainvideocontainer{padding-top:100px ; padding-bottom:100px ;padding-left: 0; padding-right: 0; }
+}
+@media(max-width: 480px){
+	.team-des div{
+		display: flex;
+		justify-content: center;
+		margin: auto;
+	}
+	/*----- Token Sale Page -----*/
+	.token-sale-counter .coins-counter-loop li {padding: 0px 6px;}
+	.token-sale-counter .coins-counter-loop li span {font-size: 20px; line-height: 20px;}
+	.token-sale-counter .coins-counter-loop li .coin-day {font-size: 14px; padding-top: 3px;}
+	.information-token li{margin: 15px 0px; text-align: center;}
+	.information-token li label{width: 100%;}
+	.information-token li span {float: unset; width: 100%;}
+
+
+	/*---- charts -----*/
+	#chart1{
+		width: 300px;
+		height: 300px;
+		
+	}
+	#chart1Img{
+		width: 300px;
+		height: 300px;
+	}
+	.tilt-box-wrap{
+		width: 300px;
+		height: 300px;
+	}
+
+	#numbers{
+		width: 300px;
+		height: 300px;
+		font-size: 1.4em;  
+	}
+
+}
+.tilt-box-wrap{
+	width: 450px;
+	height: 450px;
+	position: relative;
+	transition: all 0.6s;
+	perspective: 1000px
+}
+.tilt-box-wrap:hover{
+	transition: all 0.3s;
+	transform: scale(1.1);
+  overflow: hidden;
+}
+.tilt-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	transition: all 0.6s;
+	perspective: 1000px;
+}
+.t_over{
+	width: 33.333%;
+	height: 33.333%;
+	position: absolute;
+	z-index: 3;
+}
+.t_over:nth-child(1){ left: 0; top: 0; }
+.t_over:nth-child(2){ left: 33.333%; top: 0; }
+.t_over:nth-child(3){ left: 66.666%; top: 0; }
+.t_over:nth-child(4){ left: 0; top: 33.333%; }
+.t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
+.t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
+.t_over:nth-child(7){ left: 0; top: 66.666%; }
+.t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
+.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+.t_over:nth-child(1):hover ~ .tilt-box{transform:rotate(-15deg);}
+.t_over:nth-child(2):hover ~ .tilt-box{transform: rotate(0deg)}
+.t_over:nth-child(3):hover ~ .tilt-box{transform: rotate(15deg)}
+.t_over:nth-child(4):hover ~ .tilt-box{transform:rotate(-15deg);}
+.t_over:nth-child(5):hover ~ .tilt-box{transform:rotate(0deg);}
+.t_over:nth-child(6):hover ~ .tilt-box{transform:rotate(15deg);}
+.t_over:nth-child(7):hover ~ .tilt-box{transform:rotate(-15deg);}
+.t_over:nth-child(8):hover ~ .tilt-box{transform:rotate(0deg);}
+.t_over:nth-child(9):hover ~ .tilt-box{transform:rotate(15deg);}
+/*---- chart1 hover animation end ----*/
+#numbers{
+  font-size: 1.8em;
+  font-weight: bold;
+  z-index: 2;
+  position: absolute;
+  width: 450px;
+  height: 450px;  
+}
+.number_chart1,.number_chart2{
+  position: absolute;
+  text-shadow: rgba(0,0,0,0.3) 3px 2px 2px;;
+}
+.number_chart1:nth-child(1){left:43%;top:17%;}
+.number_chart1:nth-child(2){left:70%;top:53%;}
+.number_chart1:nth-child(3){left:21%;top:52%;}
+/* .number_chart1:nth-child(4){left:47%;top:64%;} */
+
+
+.number_chart2:nth-child(1){left:26%;top:23%;}
+/* .number_chart2:nth-child(2){left:56%;top:17%;} */
+.number_chart2:nth-child(2){left:64%;top:21%;}
+.number_chart2:nth-child(3){left:75%;top:29%;}
+.number_chart2:nth-child(4){left:79%;top:37%;}
+.number_chart2:nth-child(5){left:50%;top:64%;}
+
+
+
+#tokenomicsDiv ul,#tokensaleDiv ul{
+  transition: all 0.2s;
+}
+.focusDiv{
+  letter-spacing: 2px;
+  font-size: 1.7em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide a{
+  max-width: 80%;
+}
+.swiper-slide a:hover{
+  transform: scale(1.05);
+}
+.swiper-slide img {
+  margin: auto;
+  display: block;
+  max-height: 200px;
+  object-fit: contain;
+  
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: white !important; 
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active{
+  background-color: white !important; 
+}
+
+
+.pd, .pd2{
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.pd img, .pd2 img{
+  margin: auto;
+  height:150px;
+  transition: transform 0.2s;
+  object-fit: contain;
+}
+.pd img:hover, .pd2 img:hover{
+  transform: scale(1.15);
+}
+.pd2 img{
+  height: 300px;
 }
