@@ -1820,3 +1820,9 @@ html{scroll-behavior: smooth;}
 .pd2 img{
   height: 300px;
 }
+@media screen and (max-width: 992px) {
+ .pc{display: none;}
+}
+@media screen and (min-width: 993px) {
+  .mobile{display: none;}
+ }
